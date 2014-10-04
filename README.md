@@ -7,15 +7,27 @@ freebsd-update fetch
 freebsd-update install
 ```
 
-### Enable PF (firewall)
+Starting point for `/etc/rc.conf`
 
-Add to `/etc/rc.conf`:
 ```
+hostname="fbsd1.joshrendek.com"
+sshd_enable=YES
 pf_enable="YES"
 pf_rules="/etc/pf.conf"
 pflog_logfile="/var/log/pflog"
 pf_flags=""
+static_routes=linklocal
+ezjail_enable=YES
+cloned_interfaces="lo1"
+ipv4_addrs_lo1="192.168.1.1-9/29"
+haproxy_enable=YES
+linux_enable="YES"
+syslogd_enable="YES"
+syslogd_flags="-ss -C"
 ```
+
+### Enable PF (firewall)
+
 
 `/etc/pf.conf`:
 ```

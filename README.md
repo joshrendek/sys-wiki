@@ -1,3 +1,3 @@
 **FreeBSD**
 
-* [Base Setup](/blob/master/freebsd/README.md)
+* [Base Setup](/freebsd/README.md)

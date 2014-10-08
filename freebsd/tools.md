@@ -3,4 +3,4 @@ Tools
 
 ## DNS
 
-* drill (alternative to dig)
+* `drill` (alternative to dig)

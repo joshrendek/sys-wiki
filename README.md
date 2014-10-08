@@ -4,16 +4,9 @@
 
 ** AWS **
 
-#### Intermediate Certs for PositiveSSL
+* [ELB Intermediate PositiveSSL](/aws/README.md#intermediate-certs-for-positivessl)
 
-``` 
-cat COMODORSADomainValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt | pbcopy 
-```
 
-#### PostGres
+** PostgreSQL **
 
-Backup a DB for restoring to another host/db:
-
-```
-pg_dump -Fc --no-acl --no-owner -h localhost -U {USERNAME} {DB} > backup.dump
-```
+* [Backing up for transfer](/postgres/README.md#backing-up-for-restore)

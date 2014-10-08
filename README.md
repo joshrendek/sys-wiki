@@ -1,6 +1,7 @@
 **FreeBSD**
 
 * [Base Setup](/freebsd/README.md) : Updating, Base rc.conf, Jails, Jail Networking, PF Firewall
+* [Tools](/freebsd/tools.md) : List of FreeBSD tools (and alts to linux commands)
 
 **AWS**
 

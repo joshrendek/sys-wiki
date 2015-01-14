@@ -7,11 +7,25 @@ mariadb55-server htop php56-opcache php56-curl php56-calendar \
 php56-gd php56-ftp php56-json php56-openssl php56-readline \
 php56-recode php56-soap php56-sockets php56-wddx php56-xmlreader \
 php56-xmlwriter php56-zip php56-xsl php56-zlib
-```
+
 
 cd /usr/local/www/apache24/data
 wget https://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz
 mv wordpress/* .
 rm -rf wordpress index.html
+```
 
+Add to the end of /usr/local/etc/apache24/httpd.conf
+
+```
+Include etc/apache24/Includes/*.conf
+AddType application/x-httpd-php .php
+AddType application/x-httpd-php-source .phps
+```
+
+Reload apache:
+
+```
+/usr/local/etc/rc.d/apache24 restart
+```

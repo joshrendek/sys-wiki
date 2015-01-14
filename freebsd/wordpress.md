@@ -24,8 +24,10 @@ AddType application/x-httpd-php .php
 AddType application/x-httpd-php-source .phps
 ```
 
+Add `index.php` to `DirectoryIndex` list.
+
 Reload apache:
 
 ```
-/usr/local/etc/rc.d/apache24 restart
+apachectl reload
 ```

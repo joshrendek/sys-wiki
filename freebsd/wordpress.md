@@ -11,8 +11,7 @@ php56-xmlwriter php56-zip php56-xsl php56-zlib php56-ctype
 
 cd /usr/local/www/apache24/data
 wget https://wordpress.org/latest.tar.gz
-tar xzvf latest.tar.gz
-mv wordpress/* .
+tar --strip-components=1 -xzvf latest.tar.gz
 rm -rf wordpress index.html
 ```
 

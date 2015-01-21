@@ -28,5 +28,7 @@ Add `index.php` to `DirectoryIndex` list.
 Reload apache:
 
 ```
-apachectl reload
+echo "apache24_enable=YES" >> /etc/rc.conf
+echo "mysql_enable=YES" >> /etc/rc.conf
+apachectl start
 ```

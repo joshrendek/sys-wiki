@@ -33,6 +33,7 @@ Reload apache:
 echo "apache24_enable=YES" >> /etc/rc.conf
 echo "mysql_enable=YES" >> /etc/rc.conf
 apachectl start
+/usr/local/etc/rc.d/mysql-server start
 ```
 
 # MariaDB User & DB

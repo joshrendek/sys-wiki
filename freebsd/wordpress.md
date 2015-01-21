@@ -25,10 +25,21 @@ AddType application/x-httpd-php-source .phps
 
 Add `index.php` to `DirectoryIndex` list.
 
+# Services
+
 Reload apache:
 
 ```
 echo "apache24_enable=YES" >> /etc/rc.conf
 echo "mysql_enable=YES" >> /etc/rc.conf
 apachectl start
+```
+
+# MariaDB User & DB
+
+```
+CREATE DATABASE wordpress;
+CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'SOME_PASSWORD';
+GRANT ALL PRIVILEGES ON wordpress . * TO 'wordpress'@'localhost';
+FLUSH PRIVILEGES;
 ```

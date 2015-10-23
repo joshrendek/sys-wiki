@@ -12,6 +12,10 @@
 
 * [Backing up for transfer](/postgres/README.md#backing-up-for-restore)
 
+**Docker**
+
+* [CI Server](/docker/README.md#ci)
+
 **DNS/Email**
 
 * [SPF Record Wizard](http://www.microsoft.com/mscorp/safety/content/technologies/senderid/wizard/default.aspx)

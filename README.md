@@ -11,3 +11,7 @@
 **PostgreSQL**
 
 * [Backing up for transfer](/postgres/README.md#backing-up-for-restore)
+
+**DNS/Email**
+
+* [SPF Record Wizard](http://www.microsoft.com/mscorp/safety/content/technologies/senderid/wizard/default.aspx)

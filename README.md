@@ -11,6 +11,7 @@
 **PostgreSQL**
 
 * [Backing up for transfer](/postgres/README.md#backing-up-for-restore)
+* [Restoring a backup](/postgres#restoring-from-a-backup)
 
 **Docker**
 
